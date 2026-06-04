@@ -104,17 +104,17 @@ export const workData = [
   {
     title: 'Arabic Verb Conjugator',
     description: 'Laravel Web Application',
-    bgImage: '/arabicmorph.png',
+    bgImage: '/my-personal-portofolio/arabicmorph.png',
   },
   {
     title: 'Jamid & Musytaq Classification',
     description: 'Machine Learning Project',
-    bgImage: '/jamid-musytaq.png',
+    bgImage: '/my-personal-portofolio/jamid-musytaq.png',
   },
   {
     title: 'Clustering Web App',
     description: 'Machine Learning & Flask',
-    bgImage: '/ketimpangan.png',
+    bgImage: '/my-personal-portofolio/ketimpangan.png',
   },
 ];
 
