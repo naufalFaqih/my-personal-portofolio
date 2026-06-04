@@ -6,10 +6,10 @@ const Work = (isDarkMode) => {
   return (
     <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
       <h4 className="text-center mb-2 text-lg font-Ovo">My portfolio</h4>
-      <h2 className="text-center text-5xl font-Ovo">My latest work</h2>
+      <h2 className="text-center text-5xl font-Ovo">Selected Projects</h2>
 
       <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quia fuga, tenetur laborum eius deserunt? Asperiores magni error eum atque iure, possimus, sint necessitatibus fugit laudantium quas enim, inventore illum!
+        Here are selected projects I have worked on, focusing on web development, machine learning, data processing, and AI integration to create useful and user-oriented digital solutions.
       </p>
       <div className="grid grid-cols-auto my-18 gap-5 dark:text-black">
         {workData.map((project, index) => (

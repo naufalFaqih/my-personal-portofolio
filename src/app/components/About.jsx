@@ -4,18 +4,19 @@ import { assets, infoList, toolsData } from '../../../assets/assets';
 
 const About = ({ isDarkMode }) => {
   return (
-    <div id="about" className="w-full px-[12%] py-10 scroll-mt-20">
+    <div id="about" className="w-full px-[12%] py-10 scroll-mt-15">
       <h4 className="text-center mb-2 text-lg font-Ovo">Introduction</h4>
       <h2 className="text-center text-5xl font-Ovo">About me</h2>
 
       <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
         <div className="w-64 sm:w-80 rounded-3xl max-w-none">
-          <Image src={assets.profile_user} alt="user" className="w-full rounded-3xl" />
+          <Image src={assets.profile_user} alt="profile_user" className="w-full rounded-3xl" />
         </div>
         <div className="flex-1">
-          <p className="mb-10 mx-w-2xl font-Ovo">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus distinctio sequi commodi quis unde quod aspernatur necessitatibus? Earum laudantium debitis corporis non, perspiciatis ea in odit, quisquam sapiente magni
-            voluptate.
+          <p className="mb-10 max-w-2xl font-Ovo text-justify">
+            Hello, my name is Naufal. I'm a Computer Systems student interested in web development, machine learning, and artificial intelligence. For me, technology isn't just about writing code, but also about how a solution can help
+            users solve problems more easily and effectively. I have experience developing web applications, processing data, and building machine learning models for text classification, particularly on projects related to the Arabic
+            language. Through this portfolio, I showcase several projects that represent my learning, exploration, and development of my skills in technology.
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
             {infoList.map(({ icon, iconDark, title, description }, index) => (

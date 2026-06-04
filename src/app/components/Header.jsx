@@ -13,11 +13,10 @@ const Header = () => {
         Hi! I'm Naufal Faqih <Image src={assets.hand_icon} alt="hand_icon" className="rounded-full w-6" />
       </motion.h3>
       <motion.h1 initial={{ y: -30, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 0.8, delay: 0.5 }} className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
-        Machine Learning Enthusiast
+        AI & Web Development Enthusiast
       </motion.h1>
       <motion.p initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.7 }} className="max-w-2xl mx-auto font-Ovo">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus libero doloribus repellendus blanditiis dolorum voluptatibus ipsa. Repudiandae obcaecati perferendis alias eos voluptatibus modi quibusdam blanditiis, odit distinctio.
-        Cum, quis at.
+        Develop web applications combined with machine learning and artificial intelligence to create relevant, effective, and impactful digital solutions for users.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <motion.a

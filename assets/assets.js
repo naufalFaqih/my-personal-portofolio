@@ -27,7 +27,7 @@ import menu_black from './menu-black.png';
 import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
-import web_icon from './web-icon.png';
+import web_icon from './world-wide-web.png';
 import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
@@ -36,9 +36,17 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import profil_naufal from './profil_naufal.png';
-import profile_user from './profile-user.jpg';
+import profile_user from './profile_user.jpeg';
 import logo_black from './logo-black.png';
 import logo_white from './logo-white.png';
+import laravel from './Laravel-Logo.jpeg';
+import mysql from './logo-mysql.png';
+import python from './python-logo.png';
+import github from './github-logo.svg';
+import postman from './postman-logo.png';
+import ml from './deep-learning.png';
+import dataprocessing from './statistical.png';
+import nlp from './nlp.png';
 
 export const assets = {
   logo_black,
@@ -82,42 +90,65 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  laravel,
+  mysql,
+  python,
+  github,
+  postman,
+  ml,
+  dataprocessing,
+  nlp,
 };
 
 export const workData = [
   {
-    title: 'Frontend project',
-    description: 'Web Design',
-    bgImage: '/work-1.png',
+    title: 'Arabic Verb Conjugator',
+    description: 'Laravel Web Application',
+    bgImage: '/arabicmorph.png',
   },
   {
-    title: 'Geo based app',
-    description: 'Mobile App',
-    bgImage: '/work-2.png',
+    title: 'Jamid & Musytaq Classification',
+    description: 'Machine Learning Project',
+    bgImage: '/jamid-musytaq.png',
   },
   {
-    title: 'Photography site',
-    description: 'Web Design',
-    bgImage: '/work-3.png',
-  },
-  {
-    title: 'UI/UX designing',
-    description: 'UI/UX Design',
-    bgImage: '/work-4.png',
+    title: 'Clustering Web App',
+    description: 'Machine Learning & Flask',
+    bgImage: '/ketimpangan.png',
   },
 ];
 
 export const serviceData = [
-  { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-  { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-  { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-  { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+  {
+    icon: assets.ml,
+    title: 'Machine Learning',
+    description: 'I develop machine learning models for data classification, text processing, and model performance analysis using Python, TensorFlow, and scikit-learn.',
+    link: 'https://github.com/naufalFaqih/landcover-RF-classification',
+  },
+  {
+    icon: assets.web_icon,
+    title: 'Web Development',
+    description: 'I build structured, responsive, and user-friendly web applications using technologies like Laravel, PHP, JavaScript, and MySQL databases.',
+    link: 'https://github.com/naufalFaqih/laravel-arabic-verb-conjugator',
+  },
+  {
+    icon: assets.dataprocessing,
+    title: 'Data Processing',
+    description: 'I am accustomed to data preprocessing, feature engineering, result visualization, and model evaluation to generate more understandable insights.',
+    link: 'https://github.com/naufalFaqih/submission-bike-analysis',
+  },
+  {
+    icon: assets.nlp,
+    title: 'AI & NLP Integration',
+    description: 'I am interested in integrating AI and Natural Language Processing for mobile applications, particularly for Arabic language learning and text classification solutions.',
+    link: 'https://github.com/naufalFaqih/Capstone-Project-ArabicMorph',
+  },
 ];
 
 export const infoList = [
-  { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-  { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+  { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Tech Stack', description: 'Python, Flask, TensorFlow, Pandas, Scikit-learn, Laravel, MySQL' },
+  { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Systems' },
   { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' },
 ];
 
-export const toolsData = [assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git];
+export const toolsData = [assets.vscode, assets.git, assets.github, assets.laravel, assets.mysql, assets.python, assets.postman];
