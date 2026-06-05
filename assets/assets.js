@@ -102,19 +102,37 @@ export const assets = {
 
 export const workData = [
   {
-    title: 'Arabic Verb Conjugator',
+    slug: 'arabic-verb-conjugator',
+    title: 'ArabicMorph: Arabic Verb Conjugator',
     description: 'Laravel Web Application',
+    category: 'Web Development',
     bgImage: '/my-personal-portofolio/arabicmorph.png',
+    documentationImages: ['/my-personal-portofolio/aramorph-1.png', '/my-personal-portofolio/aramorph-2.png', '/my-personal-portofolio/aramorph-3.png'],
+    techStack: ['Laravel', 'PHP', 'MySQL', 'Blade', 'Livewire'],
+    longDescription:
+      'ArabicMorph: Arabic Verb Conjugator is a Laravel-based web application designed to help users explore Arabic verb conjugation in a clearer and more structured way. The system provides a practical lookup experience where users can input Arabic verbs and view organized conjugation results through a responsive interface. This project focuses on building a maintainable web application using Laravel, Blade, Livewire, and MySQL, while improving the flow between user input, data processing, and result presentation for Arabic morphology learning.',
   },
   {
+    slug: 'jamid-musytaq-classification',
     title: 'Jamid & Musytaq Classification',
     description: 'Machine Learning Project',
+    category: 'Machine Learning',
     bgImage: '/my-personal-portofolio/jamid-musytaq.png',
+    documentationImages: ['/my-personal-portofolio/jamus-1.png', '/my-personal-portofolio/jamus-2.png', '/my-personal-portofolio/jamus-3.png', '/my-personal-portofolio/jamus-4.png'],
+    techStack: ['Python', 'Deep Learning', 'Text Processing', 'Flask', 'NLP-Arabic'],
+    longDescription:
+      'Jamid & Musytaq Classification is a machine learning project focused on classifying Arabic words into Jamid and Musytaq categories. The project involves a complete machine learning workflow, including text preprocessing, feature preparation, model training, and performance evaluation. Through this project, I explored how deep learning and text processing techniques can be applied to Arabic linguistic data to support more consistent analysis of word patterns. The project also emphasizes evaluation using classification metrics to understand model performance and improve decision-making based on experimental results.',
   },
   {
+    slug: 'clustering-web-app',
     title: 'Clustering Web App',
     description: 'Machine Learning & Flask',
+    category: 'Data Processing',
     bgImage: '/my-personal-portofolio/ketimpangan.png',
+    documentationImages: ['/my-personal-portofolio/ketimpangan-2.png', '/my-personal-portofolio/ketimpangan-3.png', '/my-personal-portofolio/ketimpangan-4.png'],
+    techStack: ['Python', 'Flask', 'Clustering', 'Data Visualization', 'scikit-learn', 'pandas', 'leaflet'],
+    longDescription:
+      'Clustering Web App is a Flask-based machine learning application designed to process data, identify grouping patterns, and present clustering results in a more understandable form. The project applies clustering techniques to support data exploration and interpretation through visual outputs. It emphasizes a practical workflow from data preparation, clustering process, and result visualization, making the analysis easier to understand for users. Through this project, I practiced data processing, unsupervised learning, web integration, and data visualization using Python and Flask.',
   },
 ];
 

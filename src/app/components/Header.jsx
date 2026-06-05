@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { assets } from '../../../assets/assets';
 import { motion } from 'motion/react';
 
+const resumePath = '/my-personal-portofolio/CV-NAUFAL-IT-new.pdf';
+
 const Header = () => {
   return (
     <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
@@ -32,8 +34,8 @@ const Header = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1.2 }}
           transition={{ duration: 0.6, delay: 1 }}
-          href="/resume-naufal.pdf"
-          download
+          href={resumePath}
+          download="Naufal-Faqih-Resume.pdf"
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
         >
           my resume <Image src={assets.download_icon} alt="download_icon" className="w-4" />

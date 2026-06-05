@@ -13,7 +13,7 @@ const About = ({ isDarkMode }) => {
           <Image src={assets.profile_user} alt="profile_user" className="w-full rounded-3xl" />
         </div>
         <div className="flex-1">
-          <p className="mb-10 max-w-2xl font-Ovo text-justify">
+          <p className="mb-10 max-w-2xl font-Ovo text-justify px-5 md:px-0">
             Hello, my name is Naufal. I'm a Computer Systems student interested in web development, machine learning, and artificial intelligence. For me, technology isn't just about writing code, but also about how a solution can help
             users solve problems more easily and effectively. I have experience developing web applications, processing data, and building machine learning models for text classification, particularly on projects related to the Arabic
             language. Through this portfolio, I showcase several projects that represent my learning, exploration, and development of my skills in technology.
