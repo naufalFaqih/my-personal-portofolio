@@ -30,8 +30,8 @@ const ProjectsPage = () => {
                 </div>
                 <div className="p-5">
                   <p className="mb-2 w-max rounded-full border border-black px-3 py-1 text-xs font-medium dark:border-white">{project.category}</p>
-                  <h2 className="text-xl font-semibold">{project.title}</h2>
-                  <p className="mt-2 text-sm leading-6 text-gray-700 dark:text-gray-200">{project.description}</p>
+                  <h2 className="text-xl font-semibold font-Outfit">{project.title}</h2>
+                  <p className="mt-2 text-sm leading-6 text-gray-700 dark:text-gray-200 font-Outfit">{project.description}</p>
                   <div className="mt-5 flex items-center justify-between">
                     <span className="text-sm font-medium">Read project</span>
                     <span className="flex h-9 w-9 items-center justify-center rounded-full border border-black shadow-[2px_2px_0_#000] transition group-hover:bg-lime-300 dark:border-white dark:shadow-[2px_2px_0_#fff]">

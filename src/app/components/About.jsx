@@ -14,9 +14,9 @@ const About = ({ isDarkMode }) => {
         </div>
         <div className="flex-1">
           <p className="mb-10 max-w-2xl font-Ovo text-justify px-5 md:px-0">
-            Hello, my name is Naufal. I'm a Computer Systems student interested in web development, machine learning, and artificial intelligence. For me, technology isn't just about writing code, but also about how a solution can help
-            users solve problems more easily and effectively. I have experience developing web applications, processing data, and building machine learning models for text classification, particularly on projects related to the Arabic
-            language. Through this portfolio, I showcase several projects that represent my learning, exploration, and development of my skills in technology.
+            Computer Systems graduate with practical experience in IT Support and Infrastructure. Skilled in troubleshooting network connectivity, maintaining hardware and peripherals, configuring network devices, and supporting enterprise
+            applications. Experienced in providing technical support for hotel operations, including PMS, POS, printers, telephony systems, and digital signage. Focused on delivering reliable IT solutions and ensuring smooth day-to-day
+            operations.
           </p>
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
             {infoList.map(({ icon, iconDark, title, description }, index) => (

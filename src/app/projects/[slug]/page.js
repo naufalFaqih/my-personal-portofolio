@@ -20,7 +20,7 @@ export const generateMetadata = ({ params }) => {
 
   return {
     title: `${project.title} - Naufal Faqih`,
-    description: project.longDescription,
+    description: project.description || project.longDescription,
   };
 };
 
@@ -43,10 +43,30 @@ const ProjectDetailPage = ({ params }) => {
         <div className="mt-12">
           <p className="mb-3 w-max rounded-full border border-black px-4 py-1 text-sm font-medium dark:border-white">{project.category}</p>
           <h1 className="text-4xl font-Ovo md:text-5xl">{project.title}</h1>
-          <p className="mt-5 max-w-3xl font-Ovo text-lg leading-8 text-gray-700 dark:text-gray-200">{project.longDescription}</p>
+
+          {project.sections ? (
+            <div className="mt-8 max-w-3xl space-y-8 font-Ovo">
+              {project.sections.map((section, idx) => (
+                <div key={idx}>
+                  <h2 className="mb-3 text-2xl font-semibold text-gray-900 dark:text-white">{section.title}</h2>
+                  {Array.isArray(section.content) ? (
+                    <ul className="list-disc space-y-2 pl-5 text-lg leading-8 text-gray-700 dark:text-gray-200">
+                      {section.content.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-lg leading-8 text-gray-700 dark:text-gray-200">{section.content}</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className="mt-5 max-w-3xl font-Ovo text-lg leading-8 text-gray-700 dark:text-gray-200">{project.longDescription}</p>
+          )}
 
           {project.techStack?.length > 0 && (
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-10 flex flex-wrap gap-3">
               {project.techStack.map((tech) => (
                 <span key={tech} className="rounded-full border border-black bg-white px-4 py-2 text-sm shadow-[2px_2px_0_#000] dark:border-white dark:bg-darkHover dark:shadow-[2px_2px_0_#fff]">
                   {tech}
