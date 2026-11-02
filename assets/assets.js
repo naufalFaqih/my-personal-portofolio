@@ -158,28 +158,197 @@ export const workData = [
 
 export const serviceData = [
   {
+    slug: 'it-support-troubleshooting',
     icon: assets.it_sup,
     title: 'IT Support & Troubleshooting',
+    category: 'IT Support',
     description: 'Providing technical support for hardware, software, operating systems, and end-user devices. Experienced in diagnosing system issues and resolving daily IT operational problems.',
-    link: '#services',
+    intro:
+      'In a hotel, IT support is not only about fixing computers. It is about making sure the front desk can check a guest in, the restaurant can print a bill, and every department can keep working without noticing the technology behind it.',
+    sections: [
+      {
+        title: 'The Reality of Day-to-Day IT Support',
+        content:
+          'My daily work started with people, not machines. Requests came from the front office, food and beverage, housekeeping, and back-office teams, often while operations were already under pressure. A slow POS terminal or an offline printer was never just a technical issue; it directly affected guest service. That environment taught me to treat every ticket as an operational problem first and a technical problem second.',
+      },
+      {
+        title: 'How I Approach a Ticket',
+        content: [
+          'Clarify the symptom with the user and confirm when the issue started.',
+          'Reproduce the problem and check whether it affects one device, one user, or an entire department.',
+          'Work through the layers: device, operating system, application, network, and account permissions.',
+          'Apply a safe fix or temporary workaround so operations can continue.',
+          'Document the cause and the solution so the same issue can be resolved faster next time.',
+        ],
+      },
+      {
+        title: 'Real Situations I Handled',
+        content: [
+          'Front office workstations that could not access the property management system during busy check-in periods.',
+          'POS terminals and receipt printers that stopped responding in the middle of service.',
+          'Printer mapping, shared printer access, and driver issues across different departments.',
+          'Telephony and digital signage problems that affected internal coordination and guest-facing information.',
+          'End-user device issues covering Windows, office applications, accounts, and peripheral connectivity.',
+        ],
+      },
+      {
+        title: 'The Hardest Part',
+        content:
+          'The most difficult part was rarely the technical fix. It was making calm, useful decisions while a queue was forming and users were waiting. I learned to communicate what I was doing, give a realistic estimate, and provide a temporary workaround whenever a permanent fix needed more time. In a live hotel environment, transparency and speed matter as much as technical accuracy.',
+      },
+      {
+        title: 'What I Learned',
+        content:
+          'Good support is systematic. A clear troubleshooting sequence, consistent documentation, and preventive checks reduce the number of repeat incidents. It also showed me that soft skills are part of the job: listening carefully, explaining without jargon, and staying composed under pressure.',
+      },
+    ],
+    tools: ['Windows', 'PMS', 'POS', 'Printers', 'Telephony', 'Digital Signage', 'Remote Support'],
   },
   {
+    slug: 'network-infrastructure',
     icon: assets.web_icon,
     title: 'Network Infrastructure',
+    category: 'Network',
     description: 'Troubleshooting network connectivity, configuring network devices, managing access points, and understanding LAN infrastructure to maintain reliable connectivity.',
-    link: '#services',
+    intro:
+      'Network problems are often described by users in simple terms: the internet is slow, the system cannot connect, or the connection keeps dropping. My job was to turn those descriptions into a structured investigation and find the point where the connection actually failed.',
+    sections: [
+      {
+        title: 'Where Network Support Happens',
+        content:
+          'In a hotel environment, connectivity supports almost every operation. Front office terminals need the property management system, restaurant devices need the POS, and back-office teams depend on shared files and enterprise applications. Wireless access points also carry a growing number of operational devices. When one layer fails, users usually experience it as one simple symptom: something cannot connect.',
+      },
+      {
+        title: 'My Troubleshooting Flow',
+        content: [
+          'Confirm the scope: one device, one room, one access point, or the whole network.',
+          'Check the physical layer first: cable condition, port connection, link lights, and power.',
+          'Verify IP configuration, gateway, and DNS before assuming the application is at fault.',
+          'Use ping and traceroute to see where connectivity stops.',
+          'Check wireless association and signal quality for access point related issues.',
+          'Inspect switch port status, DHCP availability, and recent changes.',
+          'Document the root cause and the action taken.',
+        ],
+      },
+      {
+        title: 'Real-World Cases',
+        content: [
+          'Access point coverage issues where devices connected but could not maintain a stable session.',
+          'Intermittent drops caused by cabling, port, or access point placement problems.',
+          'Devices that failed to obtain a proper IP address from DHCP.',
+          'Staff devices that could connect to the network but could not reach internal services.',
+          'Port and access point changes needed when departments moved or added devices.',
+        ],
+      },
+      {
+        title: 'Working in a Live Environment',
+        content:
+          'Network changes in a hotel cannot be treated casually. Every adjustment has the potential to interrupt a check-in, a payment, or an internal request. I learned to plan changes, confirm the affected area, prepare a rollback step, and test from the user side before considering the job finished.',
+      },
+      {
+        title: 'What I Learned',
+        content:
+          'A consistent troubleshooting sequence prevents random guessing. Starting from the physical layer and moving upward saves time, while clear documentation of the network layout makes future incidents easier to isolate.',
+      },
+    ],
+    tools: ['LAN', 'Access Points', 'TCP/IP', 'DHCP', 'Ping & Traceroute', 'MikroTik'],
   },
   {
+    slug: 'system-application-support',
     icon: assets.app_sup,
     title: 'System & Application Support',
+    category: 'Application Support',
     description: 'Supporting enterprise applications, managing operational systems, assisting with Linux server administration, and maintaining application availability.',
-    link: '#services',
+    intro:
+      'Application support sits between users, infrastructure, and software vendors. When a business application is unavailable, the impact is immediate, and the support role is to restore service while protecting data and keeping everyone informed.',
+    sections: [
+      {
+        title: 'Support Beyond the Desktop',
+        content:
+          'Supporting enterprise applications means looking beyond the user device. An application can appear broken because of an account issue, a service that stopped running, a full disk, a network path, or a database connection. My role was to narrow down which layer was actually failing before escalating or applying a fix.',
+      },
+      {
+        title: 'My Daily Responsibilities',
+        content: [
+          'Responding to user reports about application errors, login problems, and slow performance.',
+          'Checking application and operating system logs for repeated errors or service failures.',
+          'Monitoring server resources such as disk space and running services on Linux servers.',
+          'Managing user access and ensuring accounts had the correct permissions.',
+          'Coordinating with software vendors when an issue required application-level investigation.',
+          'Recording incidents and solutions so recurring problems could be recognized faster.',
+        ],
+      },
+      {
+        title: 'When an Application Stops Working',
+        content: [
+          'Determine whether the issue affects one user, one department, or every user of the application.',
+          'Ask what changed recently: an update, a password change, a network move, or a new device.',
+          'Review logs and service status before restarting anything.',
+          'Check dependencies such as network connectivity, database access, and available disk space.',
+          'Provide a workaround if the permanent fix needs vendor involvement.',
+          'Escalate with a clear timeline, symptoms, logs, and troubleshooting steps already completed.',
+        ],
+      },
+      {
+        title: 'Working With Vendors',
+        content:
+          'Vendor support works best when the report is precise. Instead of saying the application is down, I learned to provide the exact error message, affected users, time of occurrence, recent changes, and relevant logs. Good evidence reduces back-and-forth and helps the vendor reach the root cause faster.',
+      },
+      {
+        title: 'What I Learned',
+        content:
+          'Application support is layered troubleshooting combined with communication. Users need to know what is happening, the business needs a workaround, and the technical team needs accurate evidence. Documenting each incident made the next occurrence less stressful and easier to solve.',
+      },
+    ],
+    tools: ['Enterprise Applications', 'Linux Server', 'Log Review', 'Remote Support', 'User Access', 'Incident Documentation'],
   },
   {
+    slug: 'hardware-peripheral-maintenance',
     icon: assets.scanner,
     title: 'Hardware & Peripheral Maintenance',
+    category: 'Hardware',
     description: 'Performing preventive maintenance, workstation deployment, hardware upgrades, printer troubleshooting, and peripheral device configuration.',
-    link: '#services',
+    intro:
+      'Hardware support is easy to underestimate until a printer stops working at the front desk. Most of my hardware work was preventive, but the incidents I remember most are the ones where a small device stopped a larger process.',
+    sections: [
+      {
+        title: 'Why Peripherals Matter',
+        content:
+          'A printer is not just a printer when it is used to print a guest bill. A scanner is not just a scanner when it is part of a check-in process. In a hotel, peripherals are connected directly to service delivery. That perspective changed how I prioritized maintenance and how carefully I tested devices before handing them back to users.',
+      },
+      {
+        title: 'Preventive Maintenance Routine',
+        content: [
+          'Inspecting workstations, printers, scanners, and shared peripherals on a regular schedule.',
+          'Cleaning devices and checking for dust, damage, or worn components.',
+          'Testing printing, scanning, and connectivity before users report a problem.',
+          'Checking cables, power adapters, and ports for loose or damaged connections.',
+          'Labeling devices and keeping spare parts available for common failures.',
+          'Recording maintenance history so repeated faults can be identified.',
+        ],
+      },
+      {
+        title: 'Common Issues I Handled',
+        content: [
+          'Receipt and document printers with paper jams, driver problems, or lost network connections.',
+          'Workstations that needed reinstallation, account setup, or peripheral configuration.',
+          'Hardware upgrades such as additional memory and storage for aging devices.',
+          'Monitors, scanners, and shared peripherals that stopped responding or produced poor results.',
+          'Device redeployment when a department moved or a new user joined.',
+        ],
+      },
+      {
+        title: 'Deployment and Upgrades',
+        content:
+          'For new or upgraded devices, I prepared the hardware first, installed the required applications, tested connectivity and peripherals, and only then handed the device to the user. A short handover and a quick test in the actual work area prevented most post-deployment issues.',
+      },
+      {
+        title: 'What I Learned',
+        content:
+          'Preventive maintenance is cheaper than emergency repair. Keeping spare consumables, documenting device history, and testing the full workflow, not only the device itself, made hardware support more predictable and reduced disruption to daily operations.',
+      },
+    ],
+    tools: ['Workstations', 'Printers', 'Scanners', 'Peripherals', 'Hardware Upgrades', 'Windows'],
   },
 ];
 
